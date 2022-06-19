@@ -17,18 +17,18 @@
     <li>other cats</li>
   </ol>
   <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
-<br>
-<label for="indoor"> 
-  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
-</label>
-<br>
-<label for="outdoor"> 
-  <input id="indoor" type="radio" name="indoor-outdoor">Outdoor 
-</label>
-
-  </form>
-
-
+    <label for="loving">
+        <input id="loving" type="checkbox" name="personality"> Loving
+        </label>
+        <label for="loving">
+        <input id="strong" type="checkbox" name="personality"> Strong
+        </label>
+        <label for="loving">
+        <input id="upset" type="checkbox" name="personality"> Upset
+        </label>
+</form>
 </main>
