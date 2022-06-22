@@ -11,6 +11,8 @@
     <style>
 .grid-container {
   display: grid;
+  width: 100%;
+
   grid-template-areas:
     'logo header menu'
     'video video video'
@@ -41,9 +43,7 @@
 .item10 {grid-area: footer;}
 
 .grid-container > .item1 {
-    width: 300px;
-    background:url(https://i0.wp.com/fontlot.com/wp-content/uploads/2021/04/logo-mercedes.jpg?w=801&ssl=1) no-repeat; 
-    background-size: 100% 100%;
+
  }
 
 .grid-container > .item2 { 
@@ -93,38 +93,64 @@ li a {
   text-decoration: none;
 }
 
+#nav-bar{color: white;}
+
+#form{text-align: center;}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #87ceeb;
+  }
+}
 
 
-
-
-
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
     </style>
 
 </head>
 <body>
-    
+  
+    <header id="header">
     <div class="grid-container">
-    
         <div class="item1">
+          <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#item9">FUTURE</a></li>
+            </ul>
+          </nav>
         </div>
       
         <div class="item2">
-<p class="textohead">CONTATO</p>
-
+          <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#item4">OUR MEDIAS</a></li>
+            </ul>
+          </nav>
         </div>
     
         <div class="item3">
-<p class="textohead">COMPRAR</p>
-
+          <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#item10">BUY</a></li>
+            </ul>
+          </nav>
         </div>  
     
-        <div class="item4">
-            <iframe src="https://www.youtube.com/embed/p6VDZ_p5rLo" style="width: 1300px; height: 400px; left: 0px; top: 0px;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div id="item4" class="item4">
+            <iframe id="video" src="https://www.youtube.com/embed/p6VDZ_p5rLo" style="width: 1300px; height: 400px; left: 0px; top: 0px;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         </div>
     
         <div class="item5">
             <figure>
-            <img src="https://www.mercedesbenzhk.com/eq-reserve/images/idx_car_1.jpg">
+            <img id="header-img" src="https://www.mercedesbenzhk.com/eq-reserve/images/idx_car_1.jpg">
             <figcaption class="figtext"><strong>GLE 350 4MATIC</strong></figcaption>
         <p>The luxury SUV that started the segment continues to lead the way. Roomy and refined, it's also agile and aerodynamic. And from LED headlamps to a bold yet elegant cabin, it wraps first-in-class tech in finely tailored style.</p>    
         </figure>
@@ -151,12 +177,13 @@ li a {
       
         <div class="item8">
             <h2>Please let us know if you have any questions or need additional information.</h2>
-         <label id="email-label" for="email">E-mail:</label>
-         <input style="width:auto; height: 40px; margin:20px; margin-bottom:30px;" email" name="email" id="email" class="form-control" placeholder="E-MAIL" required></input>
-         <input type="submit" value="Enviar">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input name="email" id="email" type="email" placeholder="Enter your email address" required="">
+              <input id="submit" type="submit" value="E-mail" class="btn">
+            </form>
         </div>  
     
-        <div class="item9"><H1>FUTURE</H1>
+        <div id="item9" class="item9"><H1>FUTURE</H1>
 <p>Mercedes-Benz: Innovation.
     As a pioneer of the automobile, we seek innovations which provide for pleasant, safe and resource-friendly mobility, day in, day out. Discover our visionary ideas for vehicles, mobility concepts, e-mobility and digital networking of the future – as well as the solutions with which we are already shaping the present. With the CASE strategy, Daimler focuses on the four major trends influencing future mobility – Connected, Autonomous, Shared & Services and Electric. And Daimler is already making great progress in all of these fields to shape the future of mobility. Each of the four CASE fields in itself already changes mobility fundamentally; however, the revolutionary potential only becomes apparent when the CASE fields are combined.</p>
     <figure>
@@ -164,9 +191,10 @@ li a {
    </figure>        
 </div>
       
-        <div class="item10">
+        <div id="item10" class="item10">
             <p>Follow us and use the following social media platforms to get in contact with us and to share your passion for the brand, products and services of Mercedes-Benz.</p>
-            <ul class="social-icons"> 
+            <form id="form">
+            <ul id="form" class="social-icons"> 
                 <li style="text-align: left;"> <a href="https://www.facebook.com/MercedesBenz" target="_blank"> 
                   <brandhub-icon class="brandhub" icon="facebook" width="30" height="30"> 
                   </brandhub-icon>Facebook </a><a href="#" class="fa fa-facebook"></a> </li> 
@@ -183,9 +211,9 @@ li a {
                   <brandhub-icon class="brandhub-icon" icon="linkedin" width="30" height="30"> 
                   </brandhub-icon>LinkedIn</a><a href="#" class="fa fa-linkedin"></a></li>
                </ul>
-
+              </form>
         </div>
     </div>
     </body>
-    
+  </header>
 </html>
