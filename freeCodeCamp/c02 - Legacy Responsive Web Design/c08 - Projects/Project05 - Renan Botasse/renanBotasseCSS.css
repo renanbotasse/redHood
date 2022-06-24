@@ -1,27 +1,57 @@
 body {
+    margin: 0;
     background-color: rgb(255, 255, 255);
     font-family: Arial;
     width: 100%;
 }
 
-<header id="header">
-  <nav style="position: fixed; top: 0"></nav>  
-</header>
-
-  
   #navbar{
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        background-color: #cc0000;
+        background-color: #ffffff;
       }
     
   
 footer {
-    background-color: rgb(0, 0, 0);
-    size: auto;
+        padding: 0 10px;
+        background:#EEE;
+        bottom:0px;
+        right:0px;
+        left:0px;
+        box-shadow: 0px 0px 8px 0px #000000;
+        }
+
+
+.contact-section{
+    position: relative;
+    text-align: center;
 }
+
+.contact-icons {
+    position: relative;
+    list-style:none;
+    display:inline-flex;  
+    float:center;
+    position: relative;
+    text-align: center;
+    margin: 5px;
+;
+}
+
+.footer-li  {
+
+}
+
+.icons {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+
+  
 
 
 .wrapper {
@@ -35,10 +65,30 @@ footer {
   }
 
 
-section {
-    
-    
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #660000;
+  }
+
+ .nav-list > li {;
+    display: inline-block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+  
+ .nav-list > li a {
+  display: inline-block;
+    color: white;
+    text-align:center;
+    padding: 10px;
+    text-decoration: line;
+  }
+
 
 img {
     display: block;
@@ -70,17 +120,10 @@ p {
 }
 
 h3 {
-    text-align: center;
-    width: 100%;
-    display: block;
-
+    
 }
 
 
-.showMyself {
-  
-
-}
 
 #avatar {
     position: relative; 
@@ -88,23 +131,9 @@ h3 {
 }
 
 #welcome-section > h2 {
-    font-style:italic;
     font-weight: 100;
+    border-bottom: solid 5px #302e2eb4;
+    font-weight: 100;
+    border-top: solid 5px #302e2eb4;
+    
 }
-
-#knowledge-section {
-
-}
-
-#contact-section {
-
-}
-
-#contact-icons {
-
-}
-
-#icons {
-
-}
-
