@@ -61,7 +61,11 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover, .fa-twitch:hover {
+
+.fa-eye {
+    color: black}
+
+.fa-free-code-camp:hover,.fa-github:hover,.fa-linkedin:hover, .fa-eye:hover {
     color: #660000;
 }
 .fab {
