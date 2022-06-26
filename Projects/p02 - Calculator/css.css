@@ -44,13 +44,10 @@ border-radius: 5px;
 
 }
 
-.textbox{
+.text{
     text-align: center;
     width: 212px;
     height: 25px;
     background: #ffffff;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    color:black
 }
