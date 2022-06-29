@@ -7,7 +7,9 @@ class Fruits extends React.Component {
         <div>
           <h2>Fruits:</h2>
           { /* Change code below this line */ }
-  
+  <NonCitrus />
+  <Citrus />
+
           { /* Change code above this line */ }
         </div>
       );
@@ -23,7 +25,7 @@ class Fruits extends React.Component {
         <div>
           <h1>Types of Food:</h1>
           { /* Change code below this line */ }
-  
+  <Fruits />
           { /* Change code above this line */ }
           <Vegetables />
         </div>
