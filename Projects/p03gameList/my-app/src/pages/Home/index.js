@@ -1,5 +1,7 @@
 import React from "react";
 import Games from '../../components/Games'
+import Choose from '../../components/Choose'
+
 
 
 //CRIANDO UM COMPONENTE
@@ -37,14 +39,12 @@ const Home = () => {
                      <br />
                      <h1><center>LIST OF GAMES</center></h1>
             <br />
-<p>Essa lista contem os meus jogos favoritos, como uma forma de interagir com os usuários dividir com vocês um pouco do meu amor por jogos, gostaria que vocês avaliassem os jogos aqui apresentados.
-  Caso você não conheça, não há problema, os botões te levarão a um trailer e uma pagina da wikipedia sobre o jogo. 
-  </p>
+<p>This list contains my favorite games, as a way to interact with users to share some of my love for games, I would like if you rate my favorite games. If you don't recognize some games, it's no a problem, the buttons can show trailer and wikipedia page.</p>
   <p>
-  Os jogos estão definidos de acordo com a minha preferência, vocês podem escolher o jogo, através do input "Choose a Game", dar a nota que você acha que o jogo merece, aplicar a nota através do botão "Submit".
+  The games are positioned according to my preference. You can choose the game through "Choose a Game", give the rating you think the game deserves, apply the rating through "Submit".
 </p>
 <p>
-  Após você dar todas as notas, ao fim da página, você pode clicar no botão. Esse comando enviará diretamente para o meu servidor a sua avaliação!
+After you give all the grades, at the bottom of the page, you can send the grades directly to my server.
   <br />
 </p>
           <div className="jumbotron">
@@ -54,27 +54,9 @@ const Home = () => {
               <div className="col-4">
               <label>Choose a Game</label>
               <select className="form-control">
-                <option>{listOfGames[0].NAME}</option>
-                <option>{listOfGames[1].NAME}</option>
-                <option>{listOfGames[2].NAME}</option>
-                <option>{listOfGames[3].NAME}</option>
-                <option>{listOfGames[4].NAME}</option>
-                <option>{listOfGames[5].NAME}</option>
-                <option>{listOfGames[6].NAME}</option>
-                <option>{listOfGames[7].NAME}</option>
-                <option>{listOfGames[8].NAME}</option>
-                <option>{listOfGames[9].NAME}</option>
-                <option>{listOfGames[10].NAME}</option>
-                <option>{listOfGames[11].NAME}</option>
-                <option>{listOfGames[12].NAME}</option>
-                <option>{listOfGames[13].NAME}</option>
-                <option>{listOfGames[14].NAME}</option>
-                <option>{listOfGames[15].NAME}</option>
-                <option>{listOfGames[16].NAME}</option>
-                <option>{listOfGames[17].NAME}</option>
-                <option>{listOfGames[18].NAME}</option>
-                <option>{listOfGames[19].NAME}</option>
-
+                {listOfGames.map((jogos) => (
+                        <Choose joguinho={jogos}/>
+                         ))};
                 </select>
                   </div>
                      <div className="col-4">
@@ -112,7 +94,7 @@ const Home = () => {
 </table>
 <div className="row">
                             < br />
-                          <button className="btn btn-success btn-lg btn-block">Submit</button>
+                          <button className="btn btn-warning btn-lg btn-block">SEND</button>
                                   </div>
         </div>
         
