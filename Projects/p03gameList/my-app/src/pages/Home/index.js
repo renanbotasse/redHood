@@ -44,7 +44,7 @@ const Home = () => {
             <br />
 <p>This list contains my favorite games, as a way to interact with users to share some of my love for games, I would like if you rate my favorite games. If you don't recognize some games, it's no a problem, the buttons can show trailer and wikipedia page.</p>
   <p>
-  The games are positioned according to my preference. You can choose the game through "Choose a Game", give the rating you think the game deserves, apply the rating through "Submit".
+  The games are positioned according to my preference. You can choose the game through "CHOOSE", give the rating you think the game deserves, apply the rating through "Submit".
 </p>
 <p>
 After you give all the grades, at the bottom of the page, you can send the grades directly to my server.
@@ -55,7 +55,7 @@ After you give all the grades, at the bottom of the page, you can send the grade
 
               <br />
               <div className="col-4">
-              <label>Choose a Game</label>
+              <label>CHOOSE</label>
               <select className="form-control">
                 {listOfGames.map((jogos) => (
                         <Choose joguinho={jogos}/>
@@ -63,7 +63,7 @@ After you give all the grades, at the bottom of the page, you can send the grade
                 </select>
                   </div>
                      <div className="col-4">
-                      <label>Score the Game</label>
+                      <label>SCORE</label>
                         <input id="sNumber" type="number" min="0" max="10" className="form-control"/>
                           
                           </div>
@@ -100,7 +100,7 @@ After you give all the grades, at the bottom of the page, you can send the grade
 </table>
 <div className="row">
                             < br />
-                          <button id="buttonSend">SEND</button>
+                          <button id="buttonSend"><i class="fa fa-gamepad" aria-hidden="true"> </i> SEND</button>
                                   </div>
         </div>
         
