@@ -14,7 +14,7 @@ const Home = () => {
    };
 
    const listOfGames = [
-    {N:1, NAME: "Metal Gear Solid 3", YEAR: 2004, trailerLink:"https://youtu.be/R88IT3At3rI", wikiLink:"https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater", SCORE: null},
+    {N:1, NAME: "Metal Gear Solid 3", YEAR: 2004, trailerLink:"https://youtu.be/R88IT3At3rI", wikiLink:"https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater", SCORE: 10},
     {N:2, NAME: "Red Dead Redemption 2", YEAR: 2018, trailerLink:"https://youtu.be/F63h3v9QV7w", wikiLink:"https://en.wikipedia.org/wiki/Red_Dead_Redemption_2", SCORE: null},
     {N:3, NAME: "Final Fantasy VII - Remake", YEAR: 2020, trailerLink:"https://youtu.be/Z3xSGv3Hfio", wikiLink:"https://en.wikipedia.org/wiki/Final_Fantasy_VII_Remake", SCORE: null},
     {N:4, NAME: "Silent Hill", YEAR: 1999, trailerLink:"https://youtu.be/jsJalneW5OA", wikiLink:"https://en.wikipedia.org/wiki/Silent_Hill_(video_game)", SCORE: null},
