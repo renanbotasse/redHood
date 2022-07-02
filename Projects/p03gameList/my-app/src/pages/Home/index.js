@@ -8,13 +8,13 @@ import Choose from '../../components/Choose'
 const Home = () => {
    //FAZENDO A LÓGICA DO COMPONENTE
 
-   const graderClick = () => {
-
+   const sendToMe = () => {
+alert("Thank you for rating!")
     /*Choose a Game.SCORE = (/*SCORE THE GAME)*/
    };
 
    const listOfGames = [
-    {N:1, NAME: "Metal Gear Solid 3", YEAR: 2004, trailerLink:"https://youtu.be/R88IT3At3rI", wikiLink:"https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater", SCORE: 10},
+    {N:1, NAME: "Metal Gear Solid 3", YEAR: 2004, trailerLink:"https://youtu.be/R88IT3At3rI", wikiLink:"https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater", SCORE: null},
     {N:2, NAME: "Red Dead Redemption 2", YEAR: 2018, trailerLink:"https://youtu.be/F63h3v9QV7w", wikiLink:"https://en.wikipedia.org/wiki/Red_Dead_Redemption_2", SCORE: null},
     {N:3, NAME: "Final Fantasy VII - Remake", YEAR: 2020, trailerLink:"https://youtu.be/Z3xSGv3Hfio", wikiLink:"https://en.wikipedia.org/wiki/Final_Fantasy_VII_Remake", SCORE: null},
     {N:4, NAME: "Silent Hill", YEAR: 1999, trailerLink:"https://youtu.be/jsJalneW5OA", wikiLink:"https://en.wikipedia.org/wiki/Silent_Hill_(video_game)", SCORE: null},
@@ -42,43 +42,10 @@ const Home = () => {
                      <br />
                      <h1><center>LIST OF GAMES</center></h1>
             <br />
-<p>This list contains my favorite games, as a way to interact with users to share some of my love for games, I would like if you rate my favorite games. If you don't recognize some games, it's no a problem, the buttons can show trailer and wikipedia page.</p>
+<p>This list contains my favorite games, as a way to interact with users to share some of my love for games, I would like you rate my favorite games. If you don't recognize some games, it's no a problem, the buttons can show the trailer and wikipedia page.</p>
   <p>
-  The games are positioned according to my preference. You can choose the game through "CHOOSE", give the rating you think the game deserves, apply the rating through "Submit".
+  The games are positioned according to my preference. Please, give the rating you think the game deserves. After rating all games apply through "SEND" button.
 </p>
-<p>
-After you give all the grades, at the bottom of the page, you can send the grades directly to my server.
-  <br />
-</p>
-          <div className="jumbotron">
-            <div className="row">
-
-              <br />
-              <div className="col-4">
-              <label>CHOOSE</label>
-              <select className="form-control">
-                {listOfGames.map((jogos) => (
-                        <Choose joguinho={jogos}/>
-                         ))};
-                </select>
-                  </div>
-                     <div className="col-4">
-                      <label>SCORE</label>
-                        <input id="sNumber" type="number" min="0" max="10" className="form-control"/>
-                          
-                          </div>
-                          <div className="col">
-                            < br />
-<button id="gradeButton"
- onClick={graderClick}>
-  Submit
- </button>
-                                  </div>
-                          
-                          </div>
-                                  </div>
-                                  <br />
-
             <table class="table table-striped">
   <thead>
     <tr>
@@ -86,7 +53,7 @@ After you give all the grades, at the bottom of the page, you can send the grade
       <th scope="col"><h6>NAME</h6></th>
       <th scope="col"><h6>YEAR</h6></th>
       <th scope="col" className="text-right"><h6>MORE INFO</h6></th>
-      <th scope="col"><h6>SCORE</h6></th>
+      <th scope="col"><h6>YOUR SCORE</h6></th>
       
     </tr>
   </thead>
@@ -100,7 +67,7 @@ After you give all the grades, at the bottom of the page, you can send the grade
 </table>
 <div className="row">
                             < br />
-                          <button id="buttonSend"><i class="fa fa-gamepad" aria-hidden="true"> </i> SEND</button>
+                          <button onClick={sendToMe} id="buttonSend"><i class="fa fa-gamepad" aria-hidden="true"> </i> SEND</button>
                                   </div>
         </div>
         

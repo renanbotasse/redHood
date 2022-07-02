@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Book from '../../components/Book';
 
 
@@ -15,6 +15,18 @@ Author: null,
 const send = () => {
     setBooks([book, ...books]);
 };
+
+//QUANDO MUDAR COMPONENTE
+useEffect(() => {
+  alert('Book Apply');
+},[books]);
+
+
+//COMPONENTE CARREGADO
+useEffect(() => {
+  console.log('Welcome to Book List');
+},[]);
+
 
     //REORNA O HTML DO COMPONENTE
     return (
