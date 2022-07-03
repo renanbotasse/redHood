@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>   
+    <title>List of Games</title>
+    <style>
+
+body {
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  font-weight: 500;
+  color: black;
+  text-align: justify;
+  
+}
+
+#tbody {
+  background-position: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+  text-align: justify
+}
+
+
+#th {
+  background-position: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  font-weight: 1000;
+  color: rgb(0, 0, 0);
+  text-align: justify
+}
+
+
+h6 { font-weight: bold;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.container {
+  background-color: hsla(0, 0%, 100%, 0.7)
+}
+
+label {
+text-align: center;
+}
+
+#buttonSend {
+  background-color:hsla(41, 76%, 42%, 0.459);
+  color:rgb(0, 0, 0);
+  text-align: center;
+  font-size:120%;
+  font-weight: bolder;
+  border: 2px solid black;
+  
+}
+
+#buttonSend:hover {
+  background-color: black;
+  transition-duration: 0.8s;
+  color: hsla(41, 76%, 42%, 0.459) ;
+
+  
+}
+
+#wikiLink {
+  background-color:hsla(41, 76%, 42%, 0.493);
+  border: 2px solid black;
+  position: right;
+
+}
+
+#trailerButton {
+  background-color:2px solid black;
+  border: hsla(41, 76%, 42%, 0.459);
+  position: left;
+  
+}
+
+a {
+  color: rgba(255, 255, 255, 0.603);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+#gradeButton {
+  background-color: hsla(0, 0%, 100%, 0.459);
+  color: hsl(41, 76%, 42%);
+  display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  font-weight: bolder;
+}
+
+#gradeButton:hover {
+  transition-duration: 0.8s;
+  background-color: hsla(41, 76%, 42%, 0.459);
+  color: rgba(255, 255, 255, 0.719);
+}
+
+#sNumber {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgb(100, 0, 0);
+  text-align: center;
+  font-weight: bold;
+}
+option {
+  color: black;
+  background-color: rgba(100, 100, 100, 0);
+text-align: center;
+font-weight: bold;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
