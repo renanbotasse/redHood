@@ -1,6 +1,5 @@
 import React from "react";
 import Games from '../../components/Games'
-import Choose from '../../components/Choose'
 
 
 
