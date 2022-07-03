@@ -42,9 +42,12 @@ alert("Thank you for rating!")
                      <br />
                      <h1><center>LIST OF GAMES</center></h1>
             <br />
-<p>This list contains my favorite games, as a way to interact with users to share some of my love for games, I would like you rate my favorite games. If you don't recognize some games, it's no a problem, the buttons can show the trailer and wikipedia page.</p>
+<p>
+This list contains my favorite games, as a way to interact with users to share some of my love for gaming. I would like you to rate my favorite ones. If you don't recognize some games, it's not a problem, the buttons can show the trailer and wikipedia page.
+
+</p>
   <p>
-  The games are positioned according to my preference. Please, give the rating you think the game deserves. After rating all games apply through "SEND" button.
+  The games are positioned according to my preference. Please, give the rating you think each one deserves. After rating all games apply through the "SEND" button.
 </p>
             <table class="table table-striped">
   <thead>
