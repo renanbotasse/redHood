@@ -5,7 +5,7 @@ function Glory() {
     <div className="Glory">
         <br />
     <a href="https://youtu.be/bOmadCXXW20"><button>
-        Enjoy the Glory
+    ???ENJOY???THE???GLORY???
     </button></a>
     </div>
     );

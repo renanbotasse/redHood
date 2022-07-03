@@ -9,7 +9,7 @@ function Home() {
             if (answer === "we hurt without moving we poison without touching we bear the truth and the lies we are not to be judged by our size what are we") {
             return <Answer2 />;
             } else {
-            return " X ";
+            return "  ";
             };
             };
 
@@ -30,6 +30,7 @@ return (
                     </input>
             </label>
 {conditionView(answer)}
+
 </div>
 );
 };

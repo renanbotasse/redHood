@@ -9,7 +9,7 @@ function Answer3() {
         if (answer === "zrugv") {
         return <Glory />;
         } else {
-        return "X";
+        return " ";
         };
         };
 

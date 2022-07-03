@@ -9,7 +9,7 @@ function Answer2() {
         if (answer === "words") {
         return <Answer3 />;
         } else {
-        return "X";
+        return " ";
         };
         };
 
