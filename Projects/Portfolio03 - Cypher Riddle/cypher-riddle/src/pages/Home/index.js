@@ -16,6 +16,8 @@ function Home() {
 return (
     
 <div className="Home">
+        <h2>SORRYFRI3ND</h2>
+        < br />
         <p>em pczb eqbpwcb uwdqvo em xwqawv eqbpwcb bwckpqvo em jmiz bpm bzcbp ivl bpm tqma em izm vwb bw jm rcloml jg wcz aqhm epib izm em 
         </p> 
     < br/>
